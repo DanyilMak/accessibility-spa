@@ -37,4 +37,4 @@ jobs:
         run: npx wait-on http://127.0.0.1:4173
 
       - name: Run accessibility checks
-        run: npx pa11y-ci --config .pa11yci.json
+        run: PUPPETEER_ARGS="--no-sandbox --disable-setuid-sandbox" npx pa11y-ci --config .pa11yci.json
