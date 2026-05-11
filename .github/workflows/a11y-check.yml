@@ -39,9 +39,5 @@ jobs:
         run: npx wait-on http://127.0.0.1:4173
 
       - name: Run accessibility checks
-        env:
-          PUPPETEER_ARGS: "--no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage"
-          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
-        run: |
-          npx pa11y-ci --config .pa11yci.json
+        run: npx pa11y-ci --config .pa11yci.json
         shell: bash
