@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid blue;
+  outline-offset: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+
+.toast {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid green;
+}
+
+.loader {
+  margin-top: 20px;
+}
